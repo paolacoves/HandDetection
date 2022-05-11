@@ -65,11 +65,12 @@ while (1):
                     print(resultado)
                     cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
                     cv2.putText(frame, "{}".format(dire_img[0]), (x1, y1-5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
+                    pyautogui.press("up")
                 else: # respuesta == 1:
                     print(resultado)
                     cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), 3)
                     cv2.putText(frame, "{}".format(dire_img[1]), (x1, y1 - 5), 1, 1.3, (0, 0, 255), 1, cv2.LINE_AA)
-                    # pyautogui.press("volumeup")
+                    pyautogui.press("down")
                 # else:
                    # cv2.putText(frame, "letra desconocida", (x1, y1 - 5), 1, 1.3, (255, 0, 0), 1, cv2.LINE_AA)
 
